@@ -12,10 +12,10 @@ body {
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-size: 15%;
-	animation: hover 10s;
+	animation: hover 5s;
 	transition-timing-function: cubic-bezier(.67,.25,.09,.39);
 	animation-iteration-count: infinite;
-	-webkit-animation: hover 10s;
+	-webkit-animation: hover 5s;
 	-webkit-transition-timing-function: cubic-bezier(.67,.25,.09,.39);
 	-webkit-animation-iteration-count: infinite;
 }
@@ -29,36 +29,32 @@ body {
 	left:43%;
 	background: rgba(0,0,0,0.06);
 	border-radius:100%;
-	animation: hover-shadow 10s;
+	animation: hover-shadow 5s;
 	transition-timing-function: cubic-bezier(.67,.25,.09,.39);
 	animation-iteration-count: infinite;
-	-webkit-animation: hover-shadow 10s;
+	-webkit-animation: hover-shadow 5s;
 	-webkit-transition-timing-function: cubic-bezier(.67,.25,.09,.39);
 	-webkit-animation-iteration-count: infinite;
 }
 
 @keyframes hover {
 	0% {transform:translatey(0em);}
-	25% {transform:translatey(0.5em);}
-	75% {transform:translatey(-0.5em);}
+	50% {transform:translatey(0.5em);}
 	100% {transform:translatey(0em);}
 }
 @-webkit-keyframes hover {
 	0% {transform:translatey(0em);}
-	25% {transform:translatey(0.5em);}
-	75% {transform:translatey(-0.5em);}
+	50% {transform:translatey(0.5em);}
 	100% {transform:translatey(0em);}
 }
 
 @keyframes hover-shadow {
 	0% {transform:translatey(0em);}
-	25% {transform:translatey(-0.5em) scale(1.05); background: rgba(0,0,0,0.1);}
-	75% {transform:translatey(0.5em) scale(0.9); background: rgba(0,0,0,0.05);}
+	50% {transform:translatey(-0.5em) scale(1.05); background: rgba(0,0,0,0.1);}
 	100% {transform:translatey(0em);}
 }
 @-webkit-keyframes hover-shadow {
 	0% {transform:translatey(0em);}
-	25% {transform:translatey(-0.5em) scale(1.05); background: rgba(0,0,0,0.1);}
-	75% {transform:translatey(0.5em) scale(0.9); background: rgba(0,0,0,0.05);}
+	50% {transform:translatey(-0.5em) scale(1.05); background: rgba(0,0,0,0.1);}
 	100% {transform:translatey(0em);}
 }
